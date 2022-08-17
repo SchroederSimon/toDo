@@ -1,0 +1,35 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--blueBackground)
+  }
+.list-menu {
+    display: flex;
+    list-style: none;
+} 
+.navBar li {
+    padding-left: 2rem;
+}
+.navBar a {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+.navBar h2{
+    color: var(--fontColor);
+}
+span{
+    color: var(--redBackground);
+}
+button{
+    color: var(--fontColor);
+    border: none;
+    background: var(--redBackground);
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
