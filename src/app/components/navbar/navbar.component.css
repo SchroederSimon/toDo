@@ -1,7 +1,7 @@
 .navBar {
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
     padding-right: 10%;
     padding-left: 10%;
     width: 100%;
@@ -17,19 +17,39 @@
 }
 .navBar a {
     text-decoration: none;
-    color: var(--fontColor);
+    color: var(--fontColorWhite);
+    transition-duration: 0.5s;
 }
+/* Underline navBar */
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--redBackground);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+/* Title */
 .navBar h2{
-    color: var(--fontColor);
+    color: var(--fontColorWhite);
 }
 span{
     color: var(--redBackground);
 }
+/* Button */
 button{
-    color: var(--fontColor);
+    color: var(--fontColorWhite);
     border: none;
     background: var(--redBackground);
     padding: 12px 30px;
     border-radius: 30px;
     cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover{
+    transform: scale(1.1);
 }

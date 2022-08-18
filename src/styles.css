@@ -8,5 +8,6 @@
 :root {
     --blueBackground: #1D3557;
     --redBackground: #E63946;
-    --fontColor: #F1FAEE;
+    --fontColorWhite: #F1FAEE;
+    --lightBlueBackground: #457B9D;
 }
