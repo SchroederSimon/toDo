@@ -19,6 +19,18 @@
 }
 .description h1{
     font-size: 3em;
+    overflow: hidden;
+    animation: h1-text-load 1000ms ease-in;
+}  
+@keyframes h1-text-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 .description span{
     color: var(--redBackground);
