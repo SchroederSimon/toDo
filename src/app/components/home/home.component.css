@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: center;
     gap: 200px;
-    background-color: red;
 }
 /* Description */
 .description{
@@ -81,3 +80,19 @@ img{
     font-size: 1.5em; 
 }
 /* carousel */
+.slider{
+    width: 35%;
+    height: auto;
+    text-align: center;
+}
+.slider p {
+    margin-bottom: 150px;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-style: italic;
+}
+.slider p span {
+    line-height: 3;
+
+    font-weight: 200;
+}

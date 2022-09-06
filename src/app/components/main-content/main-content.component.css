@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.rectangles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.rectangle{
+    background-color: rgb(221, 221, 221);
+    width: auto;
+    padding: 1%;
+    height: 4vh;
+    border-radius: var(--borderRadiusRectangle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+label {
+    padding-left: 2em;
+    position: relative;
+}
+label::before{
+    content: '';
+    border: solid 1px #9e9e9e;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+    transform: rotate(0deg);
+}
+
+/* Aca podria poner la barra verde desplazandose */
+[type="checkbox"]:checked + label::before {
+    border-color: #00e676;
+    color: #00e676;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content:"\f00c";
+    transform: rotate(360deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
