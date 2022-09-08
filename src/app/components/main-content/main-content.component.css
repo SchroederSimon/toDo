@@ -2,12 +2,14 @@
     width: 100%;
     height: 100vh;
 }
-
+.container h1{
+    padding-left: 150px;
+}
 .task {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 .containerTask {

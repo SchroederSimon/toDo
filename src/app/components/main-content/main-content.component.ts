@@ -11,17 +11,28 @@ import { Component, OnInit } from '@angular/core';
 export class MainContentComponent implements OnInit {
   
   tasks = [
-    { id: 1, description: "Get up on time", isChecked: false},
-    { id: 2, description: "Work out", isChecked: false},
-    { id: 3, description: "Healthy breakfast", isChecked: false},
-    { id: 4, description: "Work",  isChecked: false}
+    { id: 1, description: "Get up on time", selected: false},
+    { id: 2, description: "Work out", selected: false},
+    { id: 3, description: "Healthy breakfast", selected: false},
+    { id: 4, description: "Work",  selected: false},
+    { id: 4, description: "Study english",  selected: false},
+    { id: 4, description: "Take a nap",  selected: false},
+    { id: 4, description: "Work",  selected: false},
+    { id: 4, description: "Work on self projects",  selected: false}
   ];
 
 
   constructor() { }
 
+  onChangeTask(event: any){
+    const id = event.target.value;
+    const isChecked = event.target.checked;
+    console.log(id, isChecked)
+  }
+
   ngOnInit(): void {
   }
+
 
   }
 

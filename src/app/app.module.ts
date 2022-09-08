@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainContentComponent } from './components/main-content/main-content.com
   imports: [
     BrowserModule,
     NgImageSliderModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
