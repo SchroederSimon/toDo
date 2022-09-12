@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-main-content',
@@ -8,21 +9,26 @@ import { Component, OnInit } from '@angular/core';
 
 
 
+
 export class MainContentComponent implements OnInit {
   
+  today = new Date();
+
+
   tasks = [
     { id: 1, description: "Get up on time", selected: false},
     { id: 2, description: "Work out", selected: false},
     { id: 3, description: "Healthy breakfast", selected: false},
-    { id: 4, description: "Work",  selected: false},
-    { id: 4, description: "Study english",  selected: false},
-    { id: 4, description: "Take a nap",  selected: false},
-    { id: 4, description: "Work",  selected: false},
-    { id: 4, description: "Work on self projects",  selected: false}
+    { id: 4, description: "Write coe (3h)",  selected: false},
+    { id: 5, description: "Study english",  selected: false},
+    { id: 6, description: "Take a nap",  selected: false},
+    { id: 7, description: "Read about crypto",  selected: false},
+    { id: 8, description: "Work on self projects",  selected: false}
   ];
 
 
-  constructor() { }
+  constructor() {
+   }
 
   onChangeTask(event: any){
     const id = event.target.value;
@@ -30,30 +36,9 @@ export class MainContentComponent implements OnInit {
     console.log(id, isChecked)
   }
 
+
   ngOnInit(): void {
   }
 
 
   }
-
-
-
-
-
-// <hello name="{{ name }}"></hello>
-// <p>
-//   Start editing to see some magic happen :)
-// </p>
-
-// <ul>
-//   <ng-container *ngFor="let item of items">
-//     <li>
-//       <input 
-//          type="checkbox" 
-//         [value]="item.value"
-//         [checked]="item.isChecked"
-//         (change)="onChange($event);"
-//         > {{item.label}}
-//     </li>
-//   </ng-container>
-// </ul>
