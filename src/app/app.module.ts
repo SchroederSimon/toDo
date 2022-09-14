@@ -9,6 +9,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { ToDoComponent } from './components/to-do/to-do.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     HomeComponent,
     MainContentComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,
